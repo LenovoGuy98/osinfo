@@ -81,6 +81,7 @@ func main() {
 	}
 
 	// Print information
+	fmt.Println(green("==OS Info v0.1=="))
 	fmt.Println(cyan("--- 🖥️ System Information ---"))
 	fmt.Printf("👤 User: %s\n", green(currentUser.Username))
 	fmt.Printf("🐧 Distro: %s\n", green(distro))
