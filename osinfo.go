@@ -23,9 +23,9 @@ func main() {
 	// Create color functions
 	cyan := color.New(color.FgCyan).SprintFunc()
 	green := color.New(color.FgGreen).SprintFunc()
-	red := color.New(color.FgRed).SprintFunc()
+	//	red := color.New(color.FgRed).SprintFunc()
 	yellow := color.New(color.FgYellow).SprintFunc()
-
+	magenta := color.New(color.FgMagenta).SprintFunc()
 	// Get user info
 	currentUser, err := user.Current()
 	if err != nil {
@@ -111,6 +111,6 @@ func main() {
 				}
 			}
 		}
-		fmt.Printf("Status: %s\n", red(updates))
+		fmt.Printf("Status: %s\n", magenta(updates))
 	}
 }
